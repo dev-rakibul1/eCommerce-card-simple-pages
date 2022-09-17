@@ -10,3 +10,6 @@
   top: 0;
   left: 0;
 }
+.shopping-card-added {
+  display: block !important;
+}

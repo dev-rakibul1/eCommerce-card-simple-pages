@@ -30,3 +30,18 @@ menuSearchBoxIconClick.forEach((node) => {
 closeIcon.addEventListener("click", () => {
   closeSection.style.display = "none";
 });
+
+// menu card
+const menuCard = document.querySelectorAll("#menu-card");
+const shoppingCard = document.getElementById("shopping-card");
+menuCard.forEach((nodeList) => {
+  nodeList.addEventListener("click", () => {
+    shoppingCard.classList.toggle("shopping-card-added");
+  });
+});
+
+// shopping card close
+const shoppingCardClose = document.getElementById("shopping-card-close");
+shoppingCardClose.addEventListener("click", () => {
+  shoppingCard.classList.remove("shopping-card-added");
+});

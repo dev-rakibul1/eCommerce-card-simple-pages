@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- START HEADER SECTION -->
-    <header>
+    <header class="relative">
       <!-- menu -->
       <menu>
         <nav class="nav border py-3">
@@ -37,7 +37,7 @@
 
               <!-- off canvas menu -->
               <div
-                class="bg-gray-300 p-5 text-black-100 offcanvas h-full w-6/12"
+                class="bg-gray-300 p-5 text-black-100 offcanvas w-6/12"
                 id="offcanvas-menu"
               >
                 <!-- navbar brand -->
@@ -75,7 +75,7 @@
                       >recent</a
                     >
                   </li>
-                  <li class="nav-item mx-4">
+                  <li class="nav-item mx-4" id="menu-card">
                     <a
                       href="#"
                       class="nav-link text-base font-medium hover:text-red-500 uppercase relative"
@@ -127,7 +127,7 @@
                       >recent</a
                     >
                   </li>
-                  <li class="nav-item mx-4">
+                  <li class="nav-item mx-4" id="menu-card">
                     <a
                       href="#"
                       class="nav-link text-base font-medium hover:text-red-500 uppercase relative"
@@ -168,11 +168,113 @@
           </div>
         </div>
       </section>
+
+      <!-- shopping card section -->
+      <section
+        class="container mx-auto hidden absolute top-4/4 right-0 sm:w-6/12 md:w-6/12 lg:w-3/12 bg-lime-600 p-5"
+        id="shopping-card"
+      >
+        <!-- shopping card close -->
+        <div>
+          <span
+            id="shopping-card-close"
+            class="w-[20px] h-[20px] cursor-pointer p-1 text-white"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+        </div>
+        <!-- card info -->
+        <div class="card flex justify-around items-center">
+          <!-- card thumbnail -->
+          <div class="card-thumbnail m-2">
+            <img
+              src="images/red_shoe-min-1-1.png"
+              alt="iphone"
+              class="w-[50px] h-[50px]"
+            />
+          </div>
+
+          <!-- products increment/decrement -->
+          <div class="products-increment-decrement m-2 text-white">
+            <span class="m-2 cursor-pointer"
+              ><i class="fa-solid fa-plus"></i
+            ></span>
+            <span class="m-2 cursor-pointer">3</span>
+            <span class="m-2 cursor-pointer"
+              ><i class="fa-solid fa-minus"></i
+            ></span>
+          </div>
+
+          <!-- delete -->
+          <button class="m-2 text-white">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+
+        <hr />
+        <!-- card info -->
+        <div class="card flex justify-around items-center">
+          <!-- card thumbnail -->
+          <div class="card-thumbnail m-2">
+            <img
+              src="images/led-gate-light1-500x500.jpg"
+              alt="iphone"
+              class="w-[50px] h-[50px]"
+            />
+          </div>
+
+          <!-- products increment/decrement -->
+          <div class="products-increment-decrement m-2 text-white">
+            <span class="m-2 cursor-pointer"
+              ><i class="fa-solid fa-plus"></i
+            ></span>
+            <span class="m-2 cursor-pointer">3</span>
+            <span class="m-2 cursor-pointer"
+              ><i class="fa-solid fa-minus"></i
+            ></span>
+          </div>
+
+          <!-- delete -->
+          <button class="m-2 text-white">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+
+        <!-- total price -->
+        <div class="total-price mt-7">
+          <h4 class="text-xl text-white text-center mb-7">Your calculation</h4>
+          <div class="text-white flex justify-between items-center">
+            <span>Total products: </span>
+            <span>3</span>
+          </div>
+
+          <div class="text-white flex justify-between items-center">
+            <span>product price </span>
+            <span>$ <span>9874</span></span>
+          </div>
+
+          <div class="text-white flex justify-between items-center">
+            <span>Tax: </span>
+            <span>$ <span>41</span></span>
+          </div>
+          <div class="text-white flex justify-between items-center">
+            <span>Totla price: </span>
+            <span>$ <span>1004</span></span>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- END OF HEADER SECTION -->
 
     <!-- START MAIN SECTION -->
-    <main></main>
+    <main>
+      <section>
+        <h1>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+          ut sunt quidem porro molestias quas recusandae aspernatur non, magnam
+          beatae?
+        </h1>
+      </section>
+    </main>
     <!-- END OF MAIN SECTION -->
 
     <!-- app.js -->
