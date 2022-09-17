@@ -1,0 +1,12 @@
+.offcanvas {
+  position: absolute;
+  left: -500%;
+  transition: 0.3s all ease-in-out;
+  top: 0%;
+}
+.offcanvas-menu-block {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
